@@ -1,0 +1,210 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1671\cocoasubrtf600
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\froman\fcharset0 Times-Roman;\f2\fswiss\fcharset0 ArialMT;
+\f3\fnil\fcharset0 HelveticaNeue-Bold;\f4\fnil\fcharset0 HelveticaNeue-Medium;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue233;\red0\green0\blue0;\red255\green255\blue255;
+\red0\green0\blue233;\red100\green100\blue100;}
+{\*\expandedcolortbl;;\cssrgb\c0\c0\c93333;\cssrgb\c0\c0\c0;\cssrgb\c100000\c100000\c100000;
+\cssrgb\c0\c0\c93333;\cssrgb\c46667\c46667\c46667;}
+\margl1440\margr1440\vieww14060\viewh15840\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 Looking at the pictures from \
+\pard\pardeftab720\sl280\partightenfactor0
+{\field{\*\fldinst{HYPERLINK "https://e-vent.mit.edu/mechanical/"}}{\fldrslt 
+\f1 \cf2 \expnd0\expndtw0\kerning0
+\ul \ulc2 https://e-vent.mit.edu/mechanical/}}\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 I can tell that the motor used has: \
+	\'97 gear reduction (you want a slow movement not fast)\
+	\'97 has two power leads so: brushed DC \
+	\'97 has three wire pos feedback (usually indicates either potentiometer or simple encoder)\
+	\'97 has a USB controlled h-bridge (making it quick to program w computer) \
+Over all I found several good motor candidates \
+\
+\'97 here is a super simple motor (12V, 40RPM max, 6.2 ft-lbs) that could be direct wired to a home and limit switches and cycle controlled using the potentiometer. This means no Arduino or controller would be needed, but less control over inhale /exhale ratio. $200.00\
+\pard\pardeftab720\sl280\partightenfactor0
+{\field{\*\fldinst{HYPERLINK "https://makermotor.com/pn00309-12v-brushless-dc-bldc-115v-230v-ac-gearmotor-reversible-variable-speed-drive-40rpm-maximum/"}}{\fldrslt 
+\f1 \cf2 \expnd0\expndtw0\kerning0
+\ul \ulc2 https://makermotor.com/pn00309-12v-brushless-dc-bldc-115v-230v-ac-gearmotor-reversible-variable-speed-drive-40rpm-maximum/}}\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \
+\'97 Pololu makes this DC motor (12v, 67RPM, 680oz-in) with encoder only $39.95 but would need an H-bridge controller \
+\pard\pardeftab720\sl280\partightenfactor0
+{\field{\*\fldinst{HYPERLINK "https://www.pololu.com/product/2828"}}{\fldrslt 
+\f1 \cf2 \expnd0\expndtw0\kerning0
+\ul \ulc2 https://www.pololu.com/product/2828}}\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \'97 here is a more expensive option $565.00 from Oriental motor. This is matched motor/controller. Input power is 120v \
+\pard\pardeftab720\sl280\partightenfactor0
+{\field{\*\fldinst{HYPERLINK "https://catalog.orientalmotor.com/item/30w-ble-series-brushless-dc-motors/30-w-ble-series-bldc-network-type/ble23ar200s"}}{\fldrslt 
+\f1 \cf2 \expnd0\expndtw0\kerning0
+\ul \ulc2 https://catalog.orientalmotor.com/item/30w-ble-series-brushless-dc-motors/30-w-ble-series-bldc-network-type/ble23ar200s}}\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \'97 here is the amazon linked DC motor with encoder output. We would need one in the 100:1 gear ratio \
+\pard\pardeftab720\sl280\partightenfactor0
+{\field{\*\fldinst{HYPERLINK "https://www.amazon.com/1140RPM-Encoder-Planetary-Reduction-Diameter/dp/B07PT3RBLJ?th=1"}}{\fldrslt 
+\f1 \cf2 \expnd0\expndtw0\kerning0
+\ul \ulc2 https://www.amazon.com/1140RPM-Encoder-Planetary-Reduction-Diameter/dp/B07PT3RBLJ?th=1}}\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \'97 If we are looking to match the motor the MIT engineers used I believe it would be this one (24V DC, 44 RPM, encoder) list price $165.65 . This site superdroidrobots.com has several options and controllers as well:\
+\pard\pardeftab720\sl280\partightenfactor0
+{\field{\*\fldinst{HYPERLINK "https://www.superdroidrobots.com/shop/item.aspx/ig52-04-24vdc-044-rpm-gear-motor-with-encoder/1705/"}}{\fldrslt 
+\f1 \cf2 \expnd0\expndtw0\kerning0
+\ul \ulc2 https://www.superdroidrobots.com/shop/item.aspx/ig52-04-24vdc-044-rpm-gear-motor-with-encoder/1705/}}\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \
+\
+\
+Vent parts list \
+OPTION 1 USING SERVOS:\
+Looking at all the parts that go into the E-vent suggested list of parts. We could bypass the DC motor, H-bridge, limit switch by \
+Using either the Dynamixel MX-64T (
+\f2 \cf3 \cb4 \expnd0\expndtw0\kerning0
+6.0N.m (at 12V, 4.1A), 12V,TTL, $300.00)
+\f0 \cf0 \cb1 \kerning1\expnd0\expndtw0  (which I believe you have) or the MX-106T (8.4N.m (at 12V, 5.2A), 12V, TTL, $500.00) so the real difference being the price and rotational power. We can drive the MX-64T and have precise control over the speed while knowing the position at all times. Here is a link for the MX-106T if you want that:\
+\pard\pardeftab720\sl280\partightenfactor0
+{\field{\*\fldinst{HYPERLINK "https://www.trossenrobotics.com/p/mx-106t-dynamixel-robot-servo.aspx"}}{\fldrslt 
+\f1 \cf2 \expnd0\expndtw0\kerning0
+\ul \ulc2 https://www.trossenrobotics.com/p/mx-106t-dynamixel-robot-servo.aspx}}\
+\pard\pardeftab720\sl280\partightenfactor0
+{\field{\*\fldinst{HYPERLINK "https://www.trossenrobotics.com/p/mx-64t-dynamixel-robot-actuator.aspx"}}{\fldrslt 
+\f1 \cf2 \expnd0\expndtw0\kerning0
+\ul \ulc2 https://www.trossenrobotics.com/p/mx-64t-dynamixel-robot-actuator.aspx}}\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \
+OPTION 2 USING MIT DC MOTOR:\
+So reading through the MIT list they point to both the 71:1 gear ratio and the 188:1 ratio , but mostly the 188:1 ratio (1) selected \
+Should be \'93188:1\'94 , motor & encoder selected to \'93installed\'94, shaft size depends on what you printed out but I believe it is \'933/8 HEX\'94\
+\pard\pardeftab720\sl280\partightenfactor0
+{\field{\*\fldinst{HYPERLINK "https://www.andymark.com/products/hex-pg-series-gearboxes-options?Gear%20Ratio=188%3A1&quantity=1&Motor%20%26%20Encoder%20=Installed&Shaft%20Size=3%2F8%20Hex"}}{\fldrslt 
+\f1 \cf2 \expnd0\expndtw0\kerning0
+\ul \ulc2 https://www.andymark.com/products/hex-pg-series-gearboxes-options?Gear%20Ratio=188%3A1&quantity=1&Motor%20%26%20Encoder%20=Installed&Shaft%20Size=3%2F8%20Hex}}
+\f1 \cf2 \expnd0\expndtw0\kerning0
+\ul \ulc2 \
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f0 \cf0 \kerning1\expnd0\expndtw0 \ulnone With this DC motor we will need an H-bridge motor controller. The good one is here:\
+\pard\pardeftab720\sl280\partightenfactor0
+{\field{\*\fldinst{HYPERLINK "https://www.mouser.com/ProductDetail/Arduino/A000079?qs=gMoqXxk%2F%2F5arlTJCT4KaEg%3D%3D"}}{\fldrslt 
+\f1 \cf2 \expnd0\expndtw0\kerning0
+\ul https://www.mouser.com/ProductDetail/Arduino/A000079?qs=gMoqXxk%2F%2F5arlTJCT4KaEg%3D%3D}}
+\f1 \cf2 \expnd0\expndtw0\kerning0
+\ul \
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f0 \cf0 \kerning1\expnd0\expndtw0 \ulnone \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 As far as the Arduino I would recommend the Arduino Mega as it gives us several serial ports which we need:\
+\pard\pardeftab720\sl280\partightenfactor0
+{\field{\*\fldinst{HYPERLINK "https://www.mouser.com/ProductDetail/Arduino/A000067?qs=gMoqXxk%2F%2F5apEOlL63oO8Q%3D%3D"}}{\fldrslt 
+\f1 \cf2 \expnd0\expndtw0\kerning0
+\ul https://www.mouser.com/ProductDetail/Arduino/A000067?qs=gMoqXxk%2F%2F5apEOlL63oO8Q%3D%3D}}\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 With that we need a proto shield \
+\pard\pardeftab720\sl280\partightenfactor0
+{\field{\*\fldinst{HYPERLINK "https://www.adafruit.com/product/192"}}{\fldrslt 
+\f1 \cf2 \expnd0\expndtw0\kerning0
+\ul https://www.adafruit.com/product/192}}\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 Here is a better LCD display screen:\
+\pard\pardeftab720\sl280\partightenfactor0
+{\field{\*\fldinst{HYPERLINK "https://www.adafruit.com/product/782"}}{\fldrslt 
+\f1 \cf2 \expnd0\expndtw0\kerning0
+\ul https://www.adafruit.com/product/782}}\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 There are literally thousands of Honeywell pressure sensors but this one gets us in the range\
+\pard\pardeftab720\sl280\partightenfactor0
+{\field{\*\fldinst{HYPERLINK "https://www.digikey.com/product-detail/en/honeywell-sensing-and-productivity-solutions/SSCDRRN005PDAA5/SSCDRRN005PDAA5-ND/2416103"}}{\fldrslt 
+\f1 \cf2 \expnd0\expndtw0\kerning0
+\ul https://www.digikey.com/product-detail/en/honeywell-sensing-and-productivity-solutions/SSCDRRN005PDAA5/SSCDRRN005PDAA5-ND/2416103}}\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 Here we need (8) of these pots\
+\pard\pardeftab720\sl280\partightenfactor0
+{\field{\*\fldinst{HYPERLINK "https://www.mouser.com/ProductDetail/BI-Technologies-TT-Electronics/P160KN-0QD15B10K?qs=K%2Fj%2Fqf%252B0fqLpggbk9koQUA%3D%3D&gclid=EAIaIQobChMIhPSD8qq-6AIVDSCtBh1x6QrmEAQYBCABEgJTrPD_BwE"}}{\fldrslt 
+\f1 \cf2 \expnd0\expndtw0\kerning0
+\ul https://www.mouser.com/ProductDetail/BI-Technologies-TT-Electronics/P160KN-0QD15B10K?qs=K%2Fj%982Fqf%252B0fqLpggbk9koQUA%3D%3D&gclid=EAIaIQobChMIhPSD8qq-6AIVDSCtBh1x6QrmEAQYBCABEgJTrPD_BwE}}\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 and knobs (8) here:\
+\pard\pardeftab720\sl280\partightenfactor0
+{\field{\*\fldinst{HYPERLINK "https://www.adafruit.com/product/2047"}}{\fldrslt 
+\f1 \cf2 \expnd0\expndtw0\kerning0
+\ul https://www.adafruit.com/product/2047}}\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 And The big red button is impressive:\
+\pard\pardeftab720\sl280\partightenfactor0
+{\field{\*\fldinst{HYPERLINK "https://www.mouser.com/ProductDetail/Apem/A01ES-DF2?qs=sGAEpiMZZMtA2dT40jxjM9H5gVN97Iej4FVeOfbcNzx8sT3rCPihEg%3D%3D"}}{\fldrslt 
+\f1 \cf2 \expnd0\expndtw0\kerning0
+\ul https://www.mouser.com/ProductDetail/Apem/A01ES-DF2?qs=sGAEpiMZZMtA2dT40jxjM9H5gVN97Iej4FVeOfbcNzx8sT3rCPihEg%3D%3D}}\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 More buttons red (3) of these:\
+\pard\pardeftab720\sl280\partightenfactor0
+{\field{\*\fldinst{HYPERLINK "https://www.adafruit.com/product/1439"}}{\fldrslt 
+\f1 \cf2 \expnd0\expndtw0\kerning0
+\ul https://www.adafruit.com/product/1439}}\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 And (2) toggle switches \
+\pard\pardeftab720\sl280\partightenfactor0
+{\field{\*\fldinst{HYPERLINK "https://www.adafruit.com/product/3308"}}{\fldrslt 
+\f1 \cf2 \expnd0\expndtw0\kerning0
+\ul https://www.adafruit.com/product/3308}}\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 and (1) piezo buzzer \
+\pard\pardeftab720\sl280\partightenfactor0
+{\field{\*\fldinst{HYPERLINK "https://www.adafruit.com/product/160"}}{\fldrslt 
+\f1 \cf2 \expnd0\expndtw0\kerning0
+\ul https://www.adafruit.com/product/160}}\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 probably could use (2) of these hookup wire \
+\pard\pardeftab720\sl280\partightenfactor0
+{\field{\*\fldinst{HYPERLINK "https://www.amazon.com/Electronix-Express-Hook-Wire-Solid/dp/B00B4ZRPEY"}}{\fldrslt 
+\f1 \cf2 \expnd0\expndtw0\kerning0
+\ul https://www.amazon.com/Electronix-Express-Hook-Wire-Solid/dp/B00B4ZRPEY}}\
+\
+\
+\
+Switches :\
+\pard\pardeftab720\sl280\partightenfactor0
+{\field{\*\fldinst{HYPERLINK "https://www.mouser.com/ProductDetail/CK/T211SY9CQE?qs=sGAEpiMZZMvudeGI7i40XOZYXcd1FpzXg3wUrSyMCUY%3D"}}{\fldrslt 
+\f1 \cf2 \expnd0\expndtw0\kerning0
+\ul https://www.mouser.com/ProductDetail/CK/T211SY9CQE?qs=sGAEpiMZZMvudeGI7i40XOZYXcd1FpzXg3wUrSyMCUY%3D}}
+\f1 \cf2 \expnd0\expndtw0\kerning0
+\ul \
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f0 \cf0 \kerning1\expnd0\expndtw0 \ulnone Another \
+\pard\pardeftab720\sl280\partightenfactor0
+{\field{\*\fldinst{HYPERLINK "https://www.mouser.com/ProductDetail/NKK-Switches/G22AP?qs=sGAEpiMZZMvudeGI7i40XGhCWdm8%2Fl82jV4d5B0EqOU%3D"}}{\fldrslt 
+\f1 \cf2 \expnd0\expndtw0\kerning0
+\ul https://www.mouser.com/ProductDetail/NKK-Switches/G22AP?qs=sGAEpiMZZMvudeGI7i40XGhCWdm8%2Fl82jV4d5B0EqOU%3D}}\
+More \
+\
+\
+NEXT list *****************************************************************\
+\
+10 or more of these servo connectors :\
+\pard\pardeftab720\sl280\partightenfactor0
+{\field{\*\fldinst{HYPERLINK "https://www.digikey.com/product-detail/en/molex/0022035035/900-0022035035-ND/403302"}}{\fldrslt 
+\f1 \cf5 \expnd0\expndtw0\kerning0
+\ul \ulc5 \outl0\strokewidth0 \strokec5 https://www.digikey.com/product-detail/en/molex/0022035035/900-0022035035-ND/403302}}\
+\pard\pardeftab720\sl280\partightenfactor0
+\cf0 10 of these IC chips: \
+\pard\pardeftab720\sl280\partightenfactor0
+{\field{\*\fldinst{HYPERLINK "https://www.digikey.com/product-detail/en/texas-instruments/SN74LS241N/296-14887-5-ND/563034"}}{\fldrslt 
+\f1 \cf5 \expnd0\expndtw0\kerning0
+\ul \ulc5 \outl0\strokewidth0 \strokec5 https://www.digikey.com/product-detail/en/texas-instruments/SN74LS241N/296-14887-5-ND/563034}}\
+\pard\pardeftab720\sl280\partightenfactor0
+\cf0 A couple of these, they are the switch blocks for the \'93oh shit\'94 switches \
+\pard\pardeftab720\sl280\partightenfactor0
+{\field{\*\fldinst{HYPERLINK "https://www.digikey.com/product-detail/en/apem-inc/A0150BD/679-3845-ND/6187659"}}{\fldrslt 
+\f1 \cf5 \expnd0\expndtw0\kerning0
+\ul \ulc5 \outl0\strokewidth0 \strokec5 https://www.digikey.com/product-detail/en/apem-inc/A0150BD/679-3845-ND/6187659}}\
+\pard\pardeftab720\sl280\partightenfactor0
+\cf0 More \
+\
+Order 
+\f3\b\fs32 \cf6 \cb4 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec6 169334. For Arbotix
+\f4\b0\fs72 \cf3 \strokec3 \
+
+\f0\fs24 \cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+}
