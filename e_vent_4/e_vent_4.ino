@@ -8,6 +8,7 @@
 #define POT_4_PIN A4      // assist control threshhold 
 #define POT_5_PIN A5      // ? 
 
+#define PRESS_SENSE_PIN A9    //PRESSURE SENSOR 
 
 
 // Dynamixel values 
@@ -33,7 +34,7 @@ int state =0;                     // 0 = resting open(back porch), 1 = squeezing
 // these values are actually displayed on the LCD
 int tidal = 200;      // tidal volume or how far the bag is squezed 200 - 800ml
 int respRate = 8;        // respiratory Rate (8 to 40 breaths/min)
-
+int pressure = 0;        // pressure read from pressure sensor 
 
 int i_e_ratio = 1;        // I/E ratio (1:1 to 1:4)
 int assistContThresh = 0;  // Assist Control Threshold 
@@ -60,8 +61,12 @@ void loop(){
   else{delta_t = now_t - prev_t;}
   delay(1);
   chkPots();
+  if(now_t % 300 == 0){DispVals();}
   updateState();
-  
+
+  //Serial.println(map(printPos(),OPENPOS,CLOSEPOS,0,100));
+  //Serial.println(delta_t);
+  //printPos();
   //dxl_wb.itemWrite(dxl_id, "Profile_Velocity", 3000);
   //dxl_wb.goalPosition(dxl_id, (int32_t)OPENPOS); // go to open 
   //delay(3000);  //delay(map(respRate,10,40,4000,500));
@@ -117,9 +122,9 @@ int printPos(){
   }
   else
   {
-    Serial.print("Succeed to get present position(value1 : ");
-    Serial.print(get_data);
-    Serial.println(")");
+    //Serial.print("Succeed to get present position(value1 : ");
+    //Serial.print(get_data);
+    //Serial.println(")");
     return get_data;
   }
 }

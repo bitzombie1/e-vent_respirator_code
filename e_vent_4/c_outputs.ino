@@ -21,3 +21,9 @@ void outputLCD(String outStr, uint8_t red, uint8_t green, uint8_t blue ) {
   LCD.write(blue);
   LCD.flush();
 }
+
+void DispVals(){
+ String  outStr = String( "RR:" + String(respRate) + "BPM \r" + "TV:" + String(tidal) + "ml");
+  outputLCD(outStr, 255,255,255);
+}
+

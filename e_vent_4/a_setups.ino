@@ -73,13 +73,13 @@ void setupLCD() {
   // set the contrast to max
   LCD.write(0xFE);
   LCD.write(0x50);
-  LCD.write(255); //255
+  LCD.write(200); //255
   LCD.flush();
 
   // set the brightness to max
   LCD.write(0xFE);
   LCD.write(0x99);
-  LCD.write(255);
+  LCD.write(150);
   LCD.flush();
 
   // clear screen

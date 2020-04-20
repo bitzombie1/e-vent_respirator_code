@@ -16,6 +16,10 @@ void chkPots(){
   val = analogRead(POT_2_PIN);
   respRate = map(val,1024,0,8,40);
   calcBPM(respRate);
+
+  val = analogRead(PRESS_SENSE_PIN);
+  pressure = map(val,102,904,-5,5); 
+  Serial.println(val);
   
 }
 // find out the time in MS to take in each state 
